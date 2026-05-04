@@ -953,14 +953,21 @@ Marque
 ============================================================================*/
 .marque {
   margin: 120px 0;
+  overflow: hidden;
 }
 .marque__body {
   border-top: 1px solid #dcd8d5;
   border-bottom: 1px solid #dcd8d5;
 }
-.marque__slider .splide__list {
-  padding-top: 36px !important;
-  padding-bottom: 50px !important;
+.marque__track {
+  overflow: hidden;
+}
+.marque__list {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  padding: 50px 0;
+  will-change: transform;
 }
 .marque__slide {
   font-family: "DMSans";
@@ -968,8 +975,9 @@ Marque
   line-height: 120%;
   font-weight: 500;
   display: flex;
-  overflow: unset !important;
   gap: 2px;
+  transform: translateZ(0);
+  white-space: nowrap;
 }
 .marque__slide img {
   width: 16px;
