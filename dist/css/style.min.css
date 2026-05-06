@@ -1327,7 +1327,6 @@ Solution
   padding: 2rem;
   min-height: 14rem;
   overflow: hidden;
-  isolation: isolate;
 }
 .solution__card.-bg {
   grid-column: 2/-1;
@@ -1440,17 +1439,42 @@ Services
 .services__body {
   display: flex;
 }
+@media (width < 767px) {
+  .services__body {
+    flex-direction: column;
+  }
+}
 .services__info {
   flex: 0 0 39%;
   margin: 3rem 0;
   padding-right: clamp(70px, 7.9vw, 150px);
 }
+@media (width < 767px) {
+  .services__info {
+    padding-right: 0;
+  }
+}
 .services__title {
   margin-bottom: 3rem;
+}
+.services__screen {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.services__screen img {
+  width: 100%;
+  object-fit: cover;
 }
 .services__items {
   flex: 1;
   border-left: 1px solid #dcd8d5;
+}
+@media (width < 767px) {
+  .services__items {
+    border-left: none;
+    width: 100vw;
+    margin-left: -1.35rem;
+  }
 }
 .services__item {
   padding: 2rem 1rem;
@@ -1472,14 +1496,32 @@ Services
     transform: translateX(2rem);
   }
 }
+@media (width < 767px) {
+  .services__item {
+    padding-inline: 1.35rem;
+  }
+  .services__item:nth-child(1) {
+    border-top: 1px solid #dcd8d5;
+  }
+  .services__item.active {
+    background: #fff;
+  }
+}
 .services__item-num {
-  font-size: 0.8rem;
+  font-size: 16px;
   line-height: 120%;
   z-index: 3;
-  transition: all 0.4s cubic-bezier(0.8, 0, 0, 0.8);
+  transition: all 0.3s cubic-bezier(0.8, 0, 0, 0.8);
 }
 .services__item-num span {
   color: #a29890;
+}
+@media (width < 767px) {
+  .services__item-num {
+    position: absolute;
+    right: 1.35rem;
+    top: 2rem;
+  }
 }
 .services__item-text {
   flex: 1;
@@ -1488,7 +1530,7 @@ Services
 }
 .services__item-name {
   font-family: "DMSans";
-  font-size: clamp(1rem, 1.7vw, 1.6rem);
+  font-size: clamp(1.3rem, 1.7vw, 1.6rem);
   line-height: 120%;
   font-weight: 600;
   text-box: trim-both cap alphabetic;
@@ -1496,12 +1538,25 @@ Services
   position: relative;
   z-index: 3;
 }
+@media (width < 767px) {
+  .services__item-name {
+    width: calc(100% - 5rem);
+    text-wrap: balance;
+  }
+}
 .services__item-descr {
-  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  font-size: 0.9rem;
   line-height: 140%;
   letter-spacing: 0.02em;
   position: relative;
   z-index: 3;
+}
+@media (width < 767px) {
+  .services__item-descr {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
 }
 .services__item-cover {
   position: absolute;
@@ -1926,8 +1981,6 @@ Geography
   position: relative;
   overflow: hidden;
   height: calc(100vh - 180px);
-  transform: translateZ(0);
-  will-change: transform;
 }
 @media (width < 767px) {
   .geography__wrapper {
