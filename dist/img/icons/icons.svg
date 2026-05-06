@@ -9,6 +9,15 @@
       <path d="m1.5 7 5.334 5.5L17.5 1.5" stroke="currentColor" stroke-width="3" stroke-linecap="round"
          stroke-linejoin="round" />
    </svg>
+   <svg fill="none" viewBox="0 0 8 14" id="icon-chevron-left" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.6001 12.2L1.0001 6.6L6.6001 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+   </svg>
+   <svg fill="none" viewBox="0 0 8 14" id="icon-chevron-right" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 12.2L6.6 6.6L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+   </svg>
+   <svg fill="currentColor" viewBox="0 0 16 16" id="icon-pause" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"/>
+   </svg>
    <svg fill="none" viewBox="0 0 59 60" id="icon-logo" xmlns="http://www.w3.org/2000/svg">
       <path
          d="m14.244 5.8-5.093-.65V51.6l5.093-.43V5.8ZM5.084 10.95 0 10.3v38.8l5.084-.43V10.95ZM18.311 0v54.1L39.929 60 59 51.52V3.86L18.311 0Zm38.172 29.4-2.557 2.86v-5.77l-5.241-.11 2.645-2.86 5.153.15v5.73Zm0-8.59-2.557 2.79v-5.77l-5.241-.25v2.94L46 23.38v-5.92l-5.518-.27 2.783-2.85 5.42.31v2.94l2.645-2.78 5.153.3v5.73-.03Zm0-8.59-2.557 2.72V9.17l-5.241-.4v2.94L46 14.49V8.57l-5.518-.42v3.01l-2.833 2.85V7.93l-5.815-.44 2.932-2.84 5.706.49v3.01l2.783-2.77 5.42.46v2.94l2.645-2.71 5.153.44v5.73l.01-.02Z"

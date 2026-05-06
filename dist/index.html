@@ -35,8 +35,8 @@
             <use xlink:href="img/icons/icons.svg#icon-logo-brand"></use>
          </svg>
       </a>
+      <div class="menu__icon"><span></span></div>
       <div class="header__menu menu">
-         <div class="menu__icon"><span></span></div>
          <nav class="menu__body">
             <ul class="menu__list">
                <li class="menu__item">
@@ -55,6 +55,7 @@
                   <a href="#contacts" class="menu__link anchor">Contacts</a>
                </li>
             </ul>
+            <div class="menu__actions"></div>
          </nav>
       </div>
       <div class="header__actions">
@@ -86,8 +87,8 @@
             <section class="hero fade-up-group" id="home">
                <div class="hero__body container">
                   <div class="hero__main">
-                     <h1 class="hero__title fade-up">Flexible <span>Management</span>
-                        System <span>for</span> Insurance
+                     <h1 class="hero__title fade-up">Flexible <span>Management</span> <br>
+                        System <span>for</span> Insurance <br>
                         <span>Professionals</span>
                      </h1>
                      <div class="hero__actions fade-up">
@@ -116,13 +117,16 @@
                         <div class="hero__video">
                            <div class="hero__video-label">
                               <div class="hero__video-label-icon">
-                                 <svg>
+                                 <svg class="hero__video-label-icon-play">
                                     <use xlink:href="img/icons/icons.svg#icon-play"></use>
+                                 </svg>
+                                 <svg class="hero__video-label-icon-pause">
+                                    <use xlink:href="img/icons/icons.svg#icon-pause"></use>
                                  </svg>
                               </div>
                               <div class="hero__video-label-text">See how kvilon works</div>
                            </div>
-                           <video src="files/video.mp4" muted autoplay playsinline loop></video>
+                           <video src="files/forest.mp4" muted autoplay playsinline loop></video>
                         </div>
                      </div>
                   </div>
@@ -191,79 +195,93 @@
             <section class="solution fade-up-group" id="how">
                <div class="solution__body container">
                   <div class="solution__wrapper">
-                     <div class="solution__cards">
-                        <h2 class="solution__title section-title fade-up">Does this look <br> your workday?</h2>
-                        <div class="solution__card fade-up">
-                           <div class="solution__card-name">One wrong cell – <br> and the policy is wrong</div>
-                           <div class="solution__card-text">
-                              Manual data entry, broken formulas, uncontrolled file versions. Every mistake costs
-                              money
-                              and reputation
-                           </div>
-                           <div class="solution__card-icon">
-                              <img src="img/icons/stop.svg" width="50" height="50" alt="icon">
-                           </div>
-                        </div>
-                        <div class="solution__card fade-up">
-                           <div class="solution__card-video">
-                              <video src="files/video2.mp4" muted autoplay playsinline loop></video>
-                           </div>
-                        </div>
-                        <div class="solution__card fade-up">
-                           <div class="solution__card-name">150 emails a day. <br> Zero shared context</div>
-                           <div class="solution__card-text">
-                              Policy terms in one thread, documents in another, approval history gone. Finding the
-                              right
-                              email takes longer than the
-                              work itself
-                           </div>
-                           <div class="solution__card-icon">
-                              <img src="img/icons/stop.svg" width="50" height="50" alt="icon">
-                           </div>
-                        </div>
-                        <div class="solution__card fade-up">
-                           <div class="solution__card-video">
-                              <video src="files/video2.mp4" muted autoplay playsinline loop></video>
-                           </div>
-                        </div>
-                        <div class="solution__card fade-up">
-                           <div class="solution__card-name">Client data here. <br> Documents there</div>
-                           <div class="solution__card-text">
-                              No way to track what's been done
-                           </div>
-                           <div class="solution__card-icon">
-                              <img src="img/icons/stop.svg" width="50" height="50" alt="icon">
-                           </div>
-                        </div>
-                        <div class="solution__card fade-up">
-                           <div class="solution__card-name">Configuring any <br> system for insurance <br> is a
-                              project
-                              in itself
-                           </div>
-                           <div class="solution__card-text">
-                              One that takes months
-                           </div>
-                           <div class="solution__card-icon">
-                              <img src="img/icons/stop.svg" width="50" height="50" alt="icon">
-                           </div>
-                        </div>
-                        <div class="solution__card fade-up">
-                           <div class="solution__card-video">
-                              <video src="files/video2.mp4" muted autoplay playsinline loop></video>
-                           </div>
-                           <div class="solution__card-name">Kvilon was built to put <br> an end to all of this</div>
-                           <div class="solution__card-image">
-                              <svg>
-                                 <use xlink:href="img/icons/icons.svg#icon-logo"></use>
-                              </svg>
+                     <h2 class="solution__title section-title fade-up">Does this look <br> your workday?</h2>
+
+                     <div class="solution__slider splide">
+                        <div class="splide__track">
+                           <div class="solution__cards splide__list">
+                              <div class="solution__card fade-up splide__slide">
+                                 <div class="solution__card-name">One wrong cell – <br> and the policy is wrong</div>
+                                 <div class="solution__card-text">
+                                    Manual data entry, broken formulas, uncontrolled file versions. Every mistake costs
+                                    money
+                                    and reputation
+                                 </div>
+                                 <div class="solution__card-icon">
+                                    <img src="img/icons/stop.svg" width="50" height="50" alt="icon">
+                                 </div>
+                              </div>
+                              <div class="solution__card fade-up splide__slide -pc-only">
+                                 <div class="solution__card-video">
+                                    <video src="files/video2.mp4" muted autoplay playsinline loop></video>
+                                 </div>
+                              </div>
+                              <div class="solution__card fade-up splide__slide">
+                                 <div class="solution__card-name">150 emails a day. <br> Zero shared context</div>
+                                 <div class="solution__card-text">
+                                    Policy terms in one thread, documents in another, approval history gone. Finding the
+                                    right
+                                    email takes longer than the
+                                    work itself
+                                 </div>
+                                 <div class="solution__card-icon">
+                                    <img src="img/icons/stop.svg" width="50" height="50" alt="icon">
+                                 </div>
+                              </div>
+                              <div class="solution__card fade-up splide__slide -pc-only">
+                                 <div class="solution__card-video">
+                                    <video src="files/video2.mp4" muted autoplay playsinline loop></video>
+                                 </div>
+                              </div>
+                              <div class="solution__card fade-up splide__slide">
+                                 <div class="solution__card-name">Client data here. <br> Documents there</div>
+                                 <div class="solution__card-text">
+                                    No way to track what's been done
+                                 </div>
+                                 <div class="solution__card-icon">
+                                    <img src="img/icons/stop.svg" width="50" height="50" alt="icon">
+                                 </div>
+                              </div>
+                              <div class="solution__card fade-up splide__slide">
+                                 <div class="solution__card-name">Configuring any <br> system for insurance <br> is a
+                                    project
+                                    in itself
+                                 </div>
+                                 <div class="solution__card-text">
+                                    One that takes months
+                                 </div>
+                                 <div class="solution__card-icon">
+                                    <img src="img/icons/stop.svg" width="50" height="50" alt="icon">
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
+
+                     <div class="solution__pagination progress-pagination">
+                        <div class="progress-pagination__track">
+                           <div class="progress-pagination__bar"></div>
+                        </div>
+                     </div>
+
+                     <div class="solution__card -bg fade-up ">
+                        <div class="solution__card-video">
+                           <video src="files/video2.mp4" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="solution__card-name">Kvilon was built to put <br> an end to all of this
+                        </div>
+                        <div class="solution__card-image">
+                           <svg>
+                              <use xlink:href="img/icons/icons.svg#icon-logo"></use>
+                           </svg>
+                        </div>
+                     </div>
+
                   </div>
                </div>
             </section>
 
-            <section class="services fade-up-group" id="features">
+            <!-- <section class="services fade-up-group" id="features">
                <div class="services__body container">
                   <div class="services__info">
                      <h2 class="services__title section-title fade-up">Everything insurance professionals need.
@@ -356,7 +374,7 @@
                      </div>
                   </div>
                </div>
-            </section>
+            </section> -->
 
             <section class="start fade-up-group" id="trial">
                <div class="start__body container">
@@ -418,10 +436,10 @@
                            LAUNCH <span>1 day</span> from sign-up to live
                         </div>
                         <div class="advantages__item circle-btn">
-                           FREE TRIAL <span>14 days</span> full access, no card needed
+                           FREE TRIAL <span>21 days</span> full access, no card needed
                         </div>
                         <div class="advantages__item circle-btn">
-                           SETUP <span>No IT</span> no admins, no integrations
+                           SETUP <span>Easy</span> just sign up and go
                         </div>
                         <div class="advantages__item circle-btn">
                            RIGHT NOW <span>Free</span> start in 60 seconds →
@@ -461,36 +479,45 @@
                         </div>
                      </div>
                   </div>
-                  <div class="about__cards">
-                     <div class="about__card fade-up">
-                        <div class="about__card-icon">
-                           <img src="img/icons/user.svg" width="46" height="46" alt="icon">
-                        </div>
-                        <div class="about__card-name">Industry Expertise</div>
-                        <div class="about__card-text">
-                           A team with real experience in insurance and brokerage — not an IT company trying to
-                           figure
-                           out how insurance works
+                  <div class="about__slider splide">
+                     <div class="splide__track">
+                        <div class="splide__list">
+                           <div class="about__card splide__slide fade-up">
+                              <div class="about__card-icon">
+                                 <img src="img/icons/user.svg" width="46" height="46" alt="icon">
+                              </div>
+                              <div class="about__card-name">Industry Expertise</div>
+                              <div class="about__card-text">
+                                 A team with real experience in insurance and brokerage — not an IT company trying to
+                                 figure
+                                 out how insurance works
+                              </div>
+                           </div>
+                           <div class="about__card splide__slide fade-up">
+                              <div class="about__card-icon">
+                                 <img src="img/icons/target.svg" width="46" height="46" alt="icon">
+                              </div>
+                              <div class="about__card-name">Results First</div>
+                              <div class="about__card-text">
+                                 A product built for fast implementation and immediate value — not for feature count
+                              </div>
+                           </div>
+                           <div class="about__card splide__slide fade-up">
+                              <div class="about__card-icon">
+                                 <img src="img/icons/stats.svg" width="46" height="46" alt="icon">
+                              </div>
+                              <div class="about__card-name">Long-Term Thinking</div>
+                              <div class="about__card-text">
+                                 We're starting with marine insurance — and building a platform for the entire insurance
+                                 market
+                              </div>
+                           </div>
                         </div>
                      </div>
-                     <div class="about__card fade-up">
-                        <div class="about__card-icon">
-                           <img src="img/icons/target.svg" width="46" height="46" alt="icon">
-                        </div>
-                        <div class="about__card-name">Results First</div>
-                        <div class="about__card-text">
-                           A product built for fast implementation and immediate value — not for feature count
-                        </div>
-                     </div>
-                     <div class="about__card fade-up">
-                        <div class="about__card-icon">
-                           <img src="img/icons/stats.svg" width="46" height="46" alt="icon">
-                        </div>
-                        <div class="about__card-name">Long-Term Thinking</div>
-                        <div class="about__card-text">
-                           We're starting with marine insurance — and building a platform for the entire insurance
-                           market
-                        </div>
+                  </div>
+                  <div class="about__pagination progress-pagination">
+                     <div class="progress-pagination__track">
+                        <div class="progress-pagination__bar"></div>
                      </div>
                   </div>
                </div>
@@ -507,74 +534,83 @@
                      <div class="geography__video">
                         <video class="geography__video-source" src="files/globe.mp4" muted playsinline
                            preload="auto"></video>
-                        <canvas class="geography__video-canvas"></canvas>
                      </div>
                   </div>
                </div>
             </section>
 
+
             <section class="price" id="pricing">
                <div class="price__body container">
                   <h2 class="price__title section-title">Transparent pricing. <br> <span>No hidden fees</span></h2>
-                  <div class="price__tariffs fade-up-group">
-                     <div class="price__tariff fade-up">
-                        <div class="price__tariff-main">
-                           <div class="price__tariff-name">Starter</div>
-                           <div class="price__tariff-price"><span>$12</span>/month</div>
-                        </div>
-                        <div class="price__tariff-info">
-                           <div class="price__tariff-descr">Perfect for small teams</div>
-                           <div class="price__tariff-button">
-                              <button type="button" class="btn circle-btn --black">Start hiring</button>
+                  <div class="price__slider splide">
+                     <div class="splide__track">
+                        <div class="splide__list fade-up-group">
+                           <div class="price__tariff splide__slide fade-up">
+                              <div class="price__tariff-main">
+                                 <div class="price__tariff-name">Starter</div>
+                                 <div class="price__tariff-price"><span>$12</span>/month</div>
+                              </div>
+                              <div class="price__tariff-info">
+                                 <div class="price__tariff-descr">Perfect for small teams</div>
+                                 <div class="price__tariff-button">
+                                    <button type="button" class="btn circle-btn --black">Start hiring</button>
+                                 </div>
+                                 <div class="price__tariff-text">
+                                    <ul>
+                                       <li>3 projects</li>
+                                       <li>AI applicant screening</li>
+                                       <li>AI recruiter</li>
+                                    </ul>
+                                 </div>
+                              </div>
                            </div>
-                           <div class="price__tariff-text">
-                              <ul>
-                                 <li>3 projects</li>
-                                 <li>AI applicant screening</li>
-                                 <li>AI recruiter</li>
-                              </ul>
+                           <div class="price__tariff splide__slide fade-up">
+                              <div class="price__tariff-main">
+                                 <div class="price__tariff-name">Professional</div>
+                                 <div class="price__tariff-price"><span>$99</span>/month</div>
+                              </div>
+                              <div class="price__tariff-info">
+                                 <div class="price__tariff-descr">Perfect for growing teams</div>
+                                 <div class="price__tariff-button">
+                                    <button type="button" class="btn circle-btn --black">Start hiring</button>
+                                 </div>
+                                 <div class="price__tariff-text">
+                                    <ul>
+                                       <li>Unlimited projects</li>
+                                       <li>AI applicant screening</li>
+                                       <li>AI recruiter</li>
+                                       <li>Risk-free guarantee</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="price__tariff splide__slide fade-up">
+                              <div class="price__tariff-main">
+                                 <div class="price__tariff-name">Enterprise</div>
+                                 <div class="price__tariff-price"><span>Custom</span></div>
+                              </div>
+                              <div class="price__tariff-info">
+                                 <div class="price__tariff-descr">For large organization</div>
+                                 <div class="price__tariff-button">
+                                    <button type="button" class="btn circle-btn --black">Contact us</button>
+                                 </div>
+                                 <div class="price__tariff-text">
+                                    <ul>
+                                       <li>Unlimited projects</li>
+                                       <li>AI applicant screening</li>
+                                       <li>Custom skill assessments</li>
+                                       <li>Custom AI recruiter</li>
+                                    </ul>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
-                     <div class="price__tariff fade-up">
-                        <div class="price__tariff-main">
-                           <div class="price__tariff-name">Professional</div>
-                           <div class="price__tariff-price"><span>$99</span>/month</div>
-                        </div>
-                        <div class="price__tariff-info">
-                           <div class="price__tariff-descr">Perfect for growing teams</div>
-                           <div class="price__tariff-button">
-                              <button type="button" class="btn circle-btn --black">Start hiring</button>
-                           </div>
-                           <div class="price__tariff-text">
-                              <ul>
-                                 <li>Unlimited projects</li>
-                                 <li>AI applicant screening</li>
-                                 <li>AI recruiter</li>
-                                 <li>Risk-free guarantee</li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="price__tariff fade-up">
-                        <div class="price__tariff-main">
-                           <div class="price__tariff-name">Enterprise</div>
-                           <div class="price__tariff-price"><span>Custom</span></div>
-                        </div>
-                        <div class="price__tariff-info">
-                           <div class="price__tariff-descr">For large organization</div>
-                           <div class="price__tariff-button">
-                              <button type="button" class="btn circle-btn --black">Contact us</button>
-                           </div>
-                           <div class="price__tariff-text">
-                              <ul>
-                                 <li>Unlimited projects</li>
-                                 <li>AI applicant screening</li>
-                                 <li>Custom skill assessments</li>
-                                 <li>Custom AI recruiter</li>
-                              </ul>
-                           </div>
-                        </div>
+                  </div>
+                  <div class="price__pagination progress-pagination">
+                     <div class="progress-pagination__track">
+                        <div class="progress-pagination__bar"></div>
                      </div>
                   </div>
                </div>
@@ -662,8 +698,91 @@
                         </div>
                      </div>
                   </div>
+                  <div class="facts__content-mob">
+                     <div class="facts__actions">
+                        <div class="facts__fraction">
+                           <span class="facts__fraction-current">01</span> /
+                           <span class="facts__fraction-amount">06</span>
+                        </div>
+                        <div class="facts__buttons">
+                           <button type="button" class="facts__button" aria-label="Previous slide">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-chevron-left"></use>
+                              </svg>
+                           </button>
+                           <button type="button" class="facts__button" aria-label="Next slide">
+                              <svg>
+                                 <use xlink:href="img/icons/icons.svg#icon-chevron-right"></use>
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                     <div class="facts__slider splide">
+                        <div class="splide__track">
+                           <div class="splide__list">
+                              <div class="facts__slide splide__slide">
+                                 <div class="facts__slide-image">
+                                    <img src="img/fact-1.png" width="320" height="210" alt="image">
+                                 </div>
+                                 <div class="facts__slide-info">
+                                    <div class="facts__slide-name">Pay per user</div>
+                                    <div class="facts__slide-descr">Only pay for the people who actually use the
+                                       system</div>
+                                 </div>
+                              </div>
+                              <div class="facts__slide splide__slide">
+                                 <div class="facts__slide-image">
+                                    <img src="img/fact-2.png" width="320" height="210" alt="image">
+                                 </div>
+                                 <div class="facts__slide-info">
+                                    <div class="facts__slide-name">No long-term commitment</div>
+                                    <div class="facts__slide-descr">Monthly subscription. Cancel anytime</div>
+                                 </div>
+                              </div>
+                              <div class="facts__slide splide__slide">
+                                 <div class="facts__slide-image">
+                                    <img src="img/fact-3.png" width="320" height="210" alt="image">
+                                 </div>
+                                 <div class="facts__slide-info">
+                                    <div class="facts__slide-name">21 days free</div>
+                                    <div class="facts__slide-descr">Full access to all features — no credit card
+                                       required</div>
+                                 </div>
+                              </div>
+                              <div class="facts__slide splide__slide">
+                                 <div class="facts__slide-image">
+                                    <img src="img/fact-4.png" width="320" height="210" alt="image">
+                                 </div>
+                                 <div class="facts__slide-info">
+                                    <div class="facts__slide-name">Up and running <br> in one day</div>
+                                    <div class="facts__slide-descr">No lengthy onboarding. No IT department. No
+                                       obligations. And if it's not the right fit — leaving is just as easy as
+                                       getting started</div>
+                                 </div>
+                              </div>
+                              <div class="facts__slide splide__slide">
+                                 <div class="facts__slide-image">
+                                    <img src="img/fact-5.png" width="320" height="210" alt="image">
+                                 </div>
+                                 <div class="facts__slide-info">
+                                    <div class="facts__slide-name">No charge for <br> the volume</div>
+                                    <div class="facts__slide-descr">number of policies, stamps</div>
+                                 </div>
+                              </div>
+                              <div class="facts__slide splide__slide">
+                                 <div class="facts__slide-image">
+                                    <img src="img/fact-6.png" width="320" height="210" alt="image">
+                                 </div>
+                                 <div class="facts__slide-info">
+                                    <div class="facts__slide-name">No fee for % of insurance premium</div>
+                                    <div class="facts__slide-descr">without fee for Percentage of premium</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
-
             </section>
 
             <section class="request" id="contacts">
@@ -709,7 +828,7 @@
                         </form>
                      </div>
                      <div class="request__submit">
-                        <button type="submit" form="requestForm" class="btn circle-btn">Send request</button>
+                        <button type="submit" form="requestForm" class="btn circle-btn">Start Free Trial</button>
                         <div class="request__att">
                            14-day free trial — <br>included with any plan
                         </div>
