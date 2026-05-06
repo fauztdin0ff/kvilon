@@ -315,6 +315,11 @@ Buttons
   backdrop-filter: invert(1);
   -webkit-backdrop-filter: invert(1);
 }
+@media (width < 1000px) {
+  .btn-cursor-circle {
+    display: none !important;
+  }
+}
 
 .circle-btn {
   position: relative;
@@ -1407,6 +1412,8 @@ Solution
   width: 100%;
   height: 100%;
   overflow: hidden;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 .solution__card-video video {
   width: 100%;
@@ -1964,7 +1971,7 @@ Price
 ============================================================================*/
 .price__body {
   padding-top: clamp(4rem, 6.3vw, 6rem);
-  padding-bottom: clamp(2rem, 3.14vw, 3rem);
+  padding-bottom: 3rem;
 }
 .price__title {
   margin-bottom: clamp(2rem, 3.14vw, 3rem);
@@ -2209,12 +2216,17 @@ Facts
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   border: 1px solid var(--color-bg-secondary);
+  transition: all 0.3s ease;
 }
 .facts__button svg {
   width: 40%;
   height: 40%;
+}
+.facts__button.disabled {
+  color: #dcd8d5;
+  border-color: #dcd8d5;
 }
 @media (width < 767px) {
   .facts__slider {
