@@ -434,7 +434,7 @@ Other
   position: absolute;
   top: 0;
   height: 100%;
-  width: 10%;
+  width: 11%;
   background: #1d1d1d;
   z-index: 2;
   transform-origin: right;
@@ -473,6 +473,11 @@ Other
   font-size: 4rem;
   z-index: 5;
   color: #fff;
+}
+@media (width < 767px) {
+  .preloader__procente {
+    bottom: 4rem;
+  }
 }
 
 .progress-pagination {
@@ -2023,17 +2028,25 @@ Geography
   margin-top: clamp(4rem, 6.3vw, 6rem);
 }
 .geography__wrapper {
+  height: 300vh;
+}
+.geography__inner {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.geography__container {
   border-radius: 3rem;
   background: #000;
   padding: 3rem;
-  position: relative;
+  height: 100%;
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
   overflow: hidden;
-  height: calc(100vh - 180px);
-}
-@media (width < 767px) {
-  .geography__wrapper {
-    height: calc(100vh - 120px);
-  }
 }
 .geography__title {
   max-width: 55.5rem;
@@ -2043,6 +2056,9 @@ Geography
 .geography__title span {
   color: inherit;
   transition: all 0.3s linear;
+}
+.geography__title span.active {
+  color: #fff;
 }
 .geography__title::after {
   content: attr(data-text);
@@ -2065,6 +2081,7 @@ Geography
   width: 100%;
   height: 100%;
   object-fit: contain;
+  will-change: transform;
 }
 
 /*==========================================================================
