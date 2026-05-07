@@ -29,7 +29,7 @@
          fill="currentColor" />
    </svg>
    <svg fill="none" viewBox="0 0 42 42" id="icon-close" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 1L41 41M41 1L1 41" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      <path d="M1 1L41 41M41 1L1 41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
    </svg>
    <svg fill="none" viewBox="0 0 212 40" id="icon-logo-brand" xmlns="http://www.w3.org/2000/svg">
      <path d="M66.6637 7.28005V23.5334L80.3304 12.5867H88.9704L79.5304 20.2001L89.5437 31.3334H81.1571L74.7238 24.0667L65.6704 31.3334H59.8438V7.28005H66.6637Z" fill="currentColor"/>
