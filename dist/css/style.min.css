@@ -1090,6 +1090,7 @@ Popups general
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 .popup__close svg {
   width: 2rem;
