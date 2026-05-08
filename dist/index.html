@@ -8,8 +8,8 @@
    <meta name="msapplication-TileColor" content="#2c2825">
    <meta name="theme-color" content="#2c2825">
    <!-- Styles -->
-   <link rel="stylesheet" href="css/splide.min.css?_v=20260507172502">
-   <link rel="stylesheet" href="css/style.min.css?_v=20260507172502">
+   <link rel="stylesheet" href="css/splide.min.css?_v=20260508104657">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260508104657">
    <title>Главная</title>
 </head>
 
@@ -113,7 +113,10 @@
                         </div>
                         <div class="hero__video-label-text">See how kvilon works</div>
                      </div>
-                     <video src="files/forest.mp4" muted autoplay playsinline loop></video>
+                     <video class="geography__video-source" muted autoplay playsinline webkit-playsinline>
+                        <source src="files/forest-mobile.mp4" media="(max-width: 767px)" type="video/mp4" />
+                        <source src="files/forest.mp4" media="(min-width: 768px)" type="video/mp4" />
+                     </video>
                   </div>
                </div>
             </div>
@@ -200,7 +203,8 @@
                         </div>
                         <div class="solution__card fade-up splide__slide -pc-only">
                            <div class="solution__card-video">
-                              <video src="files/video2.mp4" muted autoplay playsinline loop></video>
+                              <video src="files/video2.webm" poster="img/video2-screen.avif" muted autoplay playsinline
+                                 loop preload="none"></video>
                            </div>
                         </div>
                         <div class="solution__card fade-up splide__slide">
@@ -217,7 +221,8 @@
                         </div>
                         <div class="solution__card fade-up splide__slide -pc-only">
                            <div class="solution__card-video">
-                              <video src="files/video2.mp4" muted autoplay playsinline loop></video>
+                              <video src="files/video2.webm" poster="img/video2-screen.avif" muted autoplay playsinline
+                                 loop preload="none"></video>
                            </div>
                         </div>
                         <div class="solution__card fade-up splide__slide">
@@ -253,7 +258,8 @@
 
                <div class="solution__card -bg fade-up ">
                   <div class="solution__card-video">
-                     <video src="files/video2.mp4" muted autoplay playsinline loop></video>
+                     <video src="files/video2.webm" poster="img/video2-screen.avif" muted autoplay playsinline loop
+                        preload="none"></video>
                   </div>
                   <div class="solution__card-name">Kvilon was built to put <br> an end to all of this
                   </div>
@@ -273,8 +279,22 @@
                <h2 class="services__title section-title fade-up">Everything insurance professionals need.
                   <span>In one workspace</span>
                </h2>
-               <div class="services__screen fade-up">
-                  <picture><source srcset="img/screencast.avif" type="image/webp"><img src="img/screencast.avif" width="580" height="340" alt="screencast"></picture>
+               <div class="services__screens fade-up">
+                  <div class="services__screen -screen-1">
+                     <picture><source srcset="img/screencast-1.avif" type="image/webp"><img src="img/screencast-1.avif" width="580" height="340" alt="screen"></picture>
+                  </div>
+                  <div class="services__screen -screen-2">
+                     <picture><source srcset="img/screencast-2.avif" type="image/webp"><img src="img/screencast-2.avif" width="580" height="340" alt="screen"></picture>
+                  </div>
+                  <div class="services__screen -screen-3">
+                     <picture><source srcset="img/screencast-3.avif" type="image/webp"><img src="img/screencast-3.avif" width="580" height="340" alt="screen"></picture>
+                  </div>
+                  <div class="services__screen -screen-4">
+                     <picture><source srcset="img/screencast-4.avif" type="image/webp"><img src="img/screencast-4.avif" width="580" height="340" alt="screen"></picture>
+                  </div>
+                  <div class="services__screen -screen-5">
+                     <picture><source srcset="img/screencast-5.avif" type="image/webp"><img src="img/screencast-5.avif" width="580" height="340" alt="screen"></picture>
+                  </div>
                </div>
             </div>
             <div class="services__items">
@@ -283,12 +303,17 @@
                   <div class="services__item-text">
                      <div class="services__item-name">Policy Builder</div>
                      <div class="services__item-descr">
-                        Build policies in a few clicks: terms, rates, coverage, and duration — all in one
-                        structured card. Documents generate
-                        automatically — no manual template filling. The full financial history, every change,
-                        and
-                        all documentation for each
-                        policy — in one place
+                        <p class="services__item-descr-text">
+                           Build policies in a few clicks: terms, rates, coverage, and duration — all in one
+                           structured card. Documents generate
+                           automatically — no manual template filling. The full financial history, every change,
+                           and
+                           all documentation for each
+                           policy — in one place
+                        </p>
+                        <div class="services__item-screen">
+                           <picture><source srcset="img/screencast-1.avif" type="image/webp"><img src="img/screencast-1.avif" width="580" height="340" alt="screen"></picture>
+                        </div>
                      </div>
                   </div>
                   <div class="services__item-cover">
@@ -301,9 +326,14 @@
                   <div class="services__item-text">
                      <div class="services__item-name">Unified Workspace</div>
                      <div class="services__item-descr">
-                        Client cards, deal details, sales pipeline — all in one interface. Complete interaction
-                        history for every client, from
-                        first contact to closed deal
+                        <p class="services__item-descr-text">
+                           Client cards, deal details, sales pipeline — all in one interface. Complete interaction
+                           history for every client, from
+                           first contact to closed deal
+                        </p>
+                        <div class="services__item-screen">
+                           <picture><source srcset="img/screencast-2.avif" type="image/webp"><img src="img/screencast-2.avif" width="580" height="340" alt="screen"></picture>
+                        </div>
                      </div>
                   </div>
                   <div class="services__item-cover">
@@ -316,9 +346,14 @@
                   <div class="services__item-text">
                      <div class="services__item-name">All Communications Inside the Deal</div>
                      <div class="services__item-descr">
-                        Email, chats, documents — right inside the client card. Correspondence history is saved
-                        automatically. No more
-                        switching tabs or digging through a shared inbox
+                        <p class="services__item-descr-text">
+                           Email, chats, documents — right inside the client card. Correspondence history is saved
+                           automatically. No more
+                           switching tabs or digging through a shared inbox
+                        </p>
+                        <div class="services__item-screen">
+                           <picture><source srcset="img/screencast-3.avif" type="image/webp"><img src="img/screencast-3.avif" width="580" height="340" alt="screen"></picture>
+                        </div>
                      </div>
                   </div>
                   <div class="services__item-cover">
@@ -331,10 +366,15 @@
                   <div class="services__item-text">
                      <div class="services__item-name">Role-Based Access for Every Team Member</div>
                      <div class="services__item-descr">
-                        The underwriter sees one thing, the claims manager sees another, the head sees
-                        everything.
-                        Everyone works in their own
-                        space — data protected, order maintained
+                        <p class="services__item-descr-text">
+                           The underwriter sees one thing, the claims manager sees another, the head sees
+                           everything.
+                           Everyone works in their own
+                           space — data protected, order maintained
+                        </p>
+                        <div class="services__item-screen">
+                           <picture><source srcset="img/screencast-4.avif" type="image/webp"><img src="img/screencast-4.avif" width="580" height="340" alt="screen"></picture>
+                        </div>
                      </div>
                   </div>
                   <div class="services__item-cover">
@@ -347,10 +387,15 @@
                   <div class="services__item-text">
                      <div class="services__item-name">AI That Understands Insurance</div>
                      <div class="services__item-descr">
-                        Automatically parses incoming emails and documents. Summarises long communication
-                        threads.
-                        Analyses client profiles and
-                        suggests how to communicate more effectively
+                        <p class="services__item-descr-text">
+                           Automatically parses incoming emails and documents. Summarises long communication
+                           threads.
+                           Analyses client profiles and
+                           suggests how to communicate more effectively
+                        </p>
+                        <div class="services__item-screen">
+                           <picture><source srcset="img/screencast-5.avif" type="image/webp"><img src="img/screencast-5.avif" width="580" height="340" alt="screen"></picture>
+                        </div>
                      </div>
                   </div>
                   <div class="services__item-cover">
@@ -984,7 +1029,7 @@
    
 
    <div class="cursor-circle"></div>
-   <script src="js/app.js?_v=20260507172502"></script>
+   <script src="js/app.js?_v=20260508104657"></script>
 </body>
 
 </html>
