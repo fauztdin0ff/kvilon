@@ -1,28 +1,5 @@
 <svg width="212" height="40" viewBox="0 0 212 40" xmlns="http://www.w3.org/2000/svg">
-
-  <defs>
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3">
-        <animate attributeName="stop-opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
-      </stop>
-
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
-
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3">
-        <animate attributeName="stop-opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
-      </stop>
-
-      <animateTransform
-        attributeName="gradientTransform"
-        type="translate"
-        from="-1 0"
-        to="1 0"
-        dur="2s"
-        repeatCount="indefinite"/>
-    </linearGradient>
-  </defs>
-
-  <g fill="url(#shine)">
+  <g fill="#fff">
     <path d="M66.6637 7.28005V23.5334L80.3304 12.5867H88.9704L79.5304 20.2001L89.5437 31.3334H81.1571L74.7238 24.0667L65.6704 31.3334H59.8438V7.28005H66.6637Z"/>
     <path d="M97.4171 12.5934L105.67 27.2467H106.344L114.57 12.5934H121.964L110.83 31.3467H101.164L90.0304 12.5934H97.4238H97.4171Z"/>
     <path d="M131.204 6.38672V10.5801H124.417V6.38672H131.204ZM124.424 31.3467V12.6601H131.21V31.3467H124.424Z"/>
