@@ -8,14 +8,17 @@
    <meta name="msapplication-TileColor" content="#2c2825">
    <meta name="theme-color" content="#2c2825">
    <!-- Styles -->
-   <link rel="stylesheet" href="css/splide.min.css?_v=20260513124059">
-   <link rel="stylesheet" href="css/style.min.css?_v=20260513124059">
+   <link rel="stylesheet" href="css/splide.min.css?_v=20260515150231">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260515150231">
    <title>Главная</title>
 </head>
 
 <body>
    <div class="preloader">
       <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      <div class="preloader__logo">
+         <img src="img/logo-anim.svg" alt="">
+      </div>
       <div class="preloader__procente">0%</div>
    </div>
    <header class="header">
@@ -101,7 +104,9 @@
             </div>
             <div class="hero__media fade-up">
                <div class="hero__media-wrapper">
-                  <div class="hero__video">
+                  <div class="hero__video" data-video-url="https://kinescope.io/rec4UCH7z9pUC97PbC24vQ">
+                     <div class="hero__video-overlay"></div>
+                     <div id="heroPlayer"></div>
                      <div class="hero__video-label">
                         <div class="hero__video-label-icon">
                            <svg class="hero__video-label-icon-play">
@@ -113,10 +118,6 @@
                         </div>
                         <div class="hero__video-label-text">See how kvilon works</div>
                      </div>
-                     <video poster="img/hero-poster.avif" muted autoplay playsinline webkit-playsinline loop>
-                        <source src="files/forest-mobile.mp4" media="(max-width: 767px)" type="video/mp4" />
-                        <source src="files/forest.mp4" media="(min-width: 768px)" type="video/mp4" />
-                     </video>
                   </div>
                </div>
             </div>
@@ -219,7 +220,7 @@
                               <img src="img/icons/stop.svg" width="50" height="50" alt="icon">
                            </div>
                         </div>
-                        <div class="solution__card fade-up splide__slide -pc-only">
+                        <div class="solution__card fade-up splide__slide -pc-only -glow">
                            <div class="solution__card-video">
                               <video src="files/video2.webm" poster="img/video2-screen.avif" muted autoplay playsinline
                                  loop preload="none"></video>
@@ -256,7 +257,7 @@
                   </div>
                </div>
 
-               <div class="solution__card -bg fade-up ">
+               <div class="solution__card -bg fade-up -glow">
                   <div class="solution__card-video">
                      <video src="files/video2.webm" poster="img/video2-screen.avif" muted autoplay playsinline loop
                         preload="none"></video>
@@ -1028,7 +1029,8 @@
    
 
    <div class="cursor-circle"></div>
-   <script src="js/app.js?_v=20260513124059"></script>
+   <script src="js/app.js?_v=20260515150231"></script>
+   <script src="https://player.kinescope.io/latest/iframe.player.js?_v=20260515150231"></script>
 </body>
 
 </html>
