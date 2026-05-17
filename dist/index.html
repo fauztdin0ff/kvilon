@@ -8,8 +8,8 @@
    <meta name="msapplication-TileColor" content="#2c2825">
    <meta name="theme-color" content="#2c2825">
    <!-- Styles -->
-   <link rel="stylesheet" href="css/splide.min.css?_v=20260515214504">
-   <link rel="stylesheet" href="css/style.min.css?_v=20260515214504">
+   <link rel="stylesheet" href="css/splide.min.css?_v=20260517093226">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260517093226">
    <!-- Preconnects -->
    <link rel="preconnect" href="https://player.kinescope.io">
    <link rel="preconnect" href="https://kinescope.io">
@@ -42,7 +42,7 @@
                   <a href="#features" class="menu__link anchor">Features</a>
                </li>
                <li class="menu__item">
-                  <a href="#how" class="menu__link anchor">How-it-works</a>
+                  <button type="button" class="menu__link open-popup" data-popup="videoPopup">How-it-works</button>
                </li>
                <li class="menu__item">
                   <a href="#pricing" class="menu__link anchor">Pricing</a>
@@ -104,7 +104,8 @@
                         Try for free
                      </button>
 
-                     <button type="button" class="btn --white circle-btn">Watch demo</button>
+                     <button type="button" class="btn --white circle-btn open-popup" data-popup="videoPopup">Watch
+                        demo</button>
                   </div>
                </div>
             </div>
@@ -882,7 +883,9 @@
          </div>
       </section>
 
-      <div class="scroll-progress"></div>
+      <div class="scrollbar">
+         <div class="scroll-progress"></div>
+      </div>
    </main>
    <footer class="footer">
    <div class="footer__body container">
@@ -934,7 +937,8 @@
                   <a href="#features" class="footer__menu-link anchor">Features</a>
                </li>
                <li class="footer__menu-item">
-                  <a href="#how" class="footer__menu-link anchor">How-it-works</a>
+                  <button type="button" class="footer__menu-link open-popup"
+                     data-popup="videoPopup">How-it-works</button>
                </li>
                <li class="footer__menu-item">
                   <a href="#pricing" class="footer__menu-link anchor">Pricing</a>
@@ -1048,8 +1052,8 @@
    
 
    <div class="cursor-circle"></div>
-   <script src="js/app.js?_v=20260515214504"></script>
-   <script src="https://player.kinescope.io/latest/iframe.player.js?_v=20260515214504"></script>
+   <script src="js/app.js?_v=20260517093226"></script>
+   <script src="https://player.kinescope.io/latest/iframe.player.js?_v=20260517093226"></script>
 </body>
 
 </html>
