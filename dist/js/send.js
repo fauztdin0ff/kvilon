@@ -1,3 +1,3 @@
-function sending() {
-   alert(`Form submitted`);
+function sending(formId) {
+   alert(formId);
 }
